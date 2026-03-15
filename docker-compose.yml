@@ -6,9 +6,9 @@ services:
     ports:
       - "3000:3000"
     environment:
-      MONGODB_URI: mongodb://mongo:27017/dashstack
-      MONGODB_DB: dashstack
-    depends_on:
+      MONGODB_URI= mongodb://adsajanstudy_db_user:5GOsgoGSf0zdIyLI@ac-knh5myf-shard-00-00.fdtgmgf.mongodb.net:27017,ac-knh5myf-shard-00-01.fdtgmgf.mongodb.net:27017,ac-knh5myf-shard-00-02.fdtgmgf.mongodb.net:27017/?ssl=true&replicaSet=atlas-safunw-shard-0&authSource=admin&appName=Cluster0
+      MONGODB_DB=adsajanstudy_db_user
+      depends_on:
       - mongo
     restart: unless-stopped
 
@@ -22,3 +22,6 @@ services:
 
 volumes:
   mongo-data:
+
+
+
